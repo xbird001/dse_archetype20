@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dse.demo.dao.ContactMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dse.demo.entity.Contact">
+        <id column="ID" property="id" />
+        <result column="OWNER" property="owner" />
+        <result column="NAME" property="name" />
+        <result column="MOBILE" property="mobile" />
+        <result column="CONTACT_GROUP" property="contactGroup" />
+        <result column="CONTACT_TYPE" property="contactType" />
+        <result column="ORDER_INDEX" property="orderIndex" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, OWNER, NAME, MOBILE, CONTACT_GROUP, CONTACT_TYPE, ORDER_INDEX
+    </sql>
+
+</mapper>
